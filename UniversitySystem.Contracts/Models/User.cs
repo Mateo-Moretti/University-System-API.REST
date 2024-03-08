@@ -8,12 +8,12 @@ namespace UniversitySystem.Contracts.Models
 {
     public abstract class User
     {
-        public int id;
-        public string Name;
-        public string Surname;
-        public string Email;
-        public string Password;
-        public int PhoneNumber;
+        public int id { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public int PhoneNumber { get; set; }
 
         public User(int id, string name, string surname, string email, string password, int phoneNumber)
         {
