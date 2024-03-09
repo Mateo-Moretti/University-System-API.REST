@@ -4,12 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversitySystemAPI.REST", "UniversitySystemAPI.REST\UniversitySystemAPI.REST.csproj", "{79CA5B7B-D644-4EA1-907F-9567B184FEB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD4A6FB6-599C-47BC-9399-697E1344C923} = {CD4A6FB6-599C-47BC-9399-697E1344C923}
+		{E4242DC8-4C3A-4575-BDB2-3E5B109AF11E} = {E4242DC8-4C3A-4575-BDB2-3E5B109AF11E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitySystem.Contracts", "UniversitySystem.Contracts\UniversitySystem.Contracts.csproj", "{E4242DC8-4C3A-4575-BDB2-3E5B109AF11E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversitySystem.Contracts", "UniversitySystem.Contracts\UniversitySystem.Contracts.csproj", "{E4242DC8-4C3A-4575-BDB2-3E5B109AF11E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitySystem.Services", "UniversitySystem.Services\UniversitySystem.Services.csproj", "{CD4A6FB6-599C-47BC-9399-697E1344C923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversitySystem.Services", "UniversitySystem.Services\UniversitySystem.Services.csproj", "{CD4A6FB6-599C-47BC-9399-697E1344C923}"
+	ProjectSection(ProjectDependencies) = postProject
+		{662819F5-338A-455B-BC1D-55D2FAB1E98B} = {662819F5-338A-455B-BC1D-55D2FAB1E98B}
+		{E4242DC8-4C3A-4575-BDB2-3E5B109AF11E} = {E4242DC8-4C3A-4575-BDB2-3E5B109AF11E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitySystem.Persistance", "UniversitySystem.Persistance\UniversitySystem.Persistance.csproj", "{662819F5-338A-455B-BC1D-55D2FAB1E98B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversitySystem.Persistance", "UniversitySystem.Persistance\UniversitySystem.Persistance.csproj", "{662819F5-338A-455B-BC1D-55D2FAB1E98B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4242DC8-4C3A-4575-BDB2-3E5B109AF11E} = {E4242DC8-4C3A-4575-BDB2-3E5B109AF11E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

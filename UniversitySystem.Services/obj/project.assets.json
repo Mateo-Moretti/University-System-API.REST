@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "UniversitySystem.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/UniversitySystem.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniversitySystem.Contracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "UniversitySystem.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../UniversitySystem.Contracts/UniversitySystem.Contracts.csproj",
+      "msbuildProject": "../UniversitySystem.Contracts/UniversitySystem.Contracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "UniversitySystem.Contracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mateo\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "B:\\Users\\mateo\\Desktop\\UniversitySystemAPI.REST\\UniversitySystem.Contracts\\UniversitySystem.Contracts.csproj": {
+              "projectPath": "B:\\Users\\mateo\\Desktop\\UniversitySystemAPI.REST\\UniversitySystem.Contracts\\UniversitySystem.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
