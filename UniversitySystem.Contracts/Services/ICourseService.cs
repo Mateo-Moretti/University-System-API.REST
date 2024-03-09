@@ -17,5 +17,11 @@ namespace UniversitySystem.Contracts.Services
 
         //SPECIFIC
         Task<Course> GetByIdAsync(int id);
+        Task<IEnumerable<Student>> GetAllStudentsAsync(int id);
+        Task<IEnumerable<Profesor>> GetAllProfesorsAsync(int id);
+        Task EnrollSudentAsync(int studentId, int courseId);
+        Task EnrollProfesorAsync(int profesorId, int courseId);
+        Task ReleaseSudentAsync(int studentId, int courseId);
+        Task ReleaseProfesorAsync(int profesorId, int courseId);
     }
 }
